@@ -7,12 +7,12 @@ import gallery6 from "@/assets/gallery-6.jpg";
 
 const Gallery = () => {
   const images = [
-    { src: gallery1, alt: "Cliente com corte moderno na Barbearia Vovô Garoto" },
-    { src: gallery2, alt: "Corte masculino em frente ao letreiro neon da Unidade 2" },
-    { src: gallery3, alt: "Barbeiro aplicando técnica de barbearia profissional" },
-    { src: gallery4, alt: "Corte social masculino com degradê perfeito" },
-    { src: gallery5, alt: "Corte infantil estiloso na Barbearia Vovô Garoto" },
-    { src: gallery6, alt: "Corte moderno com fade e estilo único" },
+    { src: gallery1, alt: "Corte masculino com degradê lateral perfeito na Mustafa Barber's Shop" },
+    { src: gallery2, alt: "Corte estilizado com desenho artístico lateral na barbearia Mustafa" },
+    { src: gallery3, alt: "Corte social masculino degradê baixo e acabamento profissional" },
+    { src: gallery4, alt: "Corte moderno com fade e acabamento impecável na Mustafa Barber's Shop" },
+    { src: gallery5, alt: "Corte infantil platinado com estilo único na barbearia Mustafa" },
+    { src: gallery6, alt: "Corte infantil com coloração azul e degradê artístico personalizado" },
   ];
 
   return (
