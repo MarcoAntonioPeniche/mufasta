@@ -26,7 +26,7 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
   const location = {
     name: "Mustafa Barber's Shop",
     address: "Rua Antônio Rocha Camargo, 139 — Vila Domingues, Votorantim/SP",
-    whatsapp: "https://wa.me/5515992844348",
+    whatsapp: "https://wa.me/5515992844348?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!",
   };
 
   return (
