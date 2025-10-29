@@ -18,13 +18,13 @@ const Instagram = () => {
           asChild
         >
           <a
-            href="https://www.instagram.com/barbeariavovogaroto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.instagram.com/mustafabarbersshop"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
             <InstagramIcon size={24} />
-            @barbeariavovogaroto
+            @mustafabarbersshop
           </a>
         </Button>
       </div>

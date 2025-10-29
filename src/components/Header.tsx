@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-vovo-garoto.png";
+import logo from "@/assets/logo-mustafa.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +44,7 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
             className="hover:brightness-110 transition-all"
           >
-            <img src={logo} alt="Barbearia Vovô Garoto" className="h-16 md:h-20 lg:h-24 w-auto" />
+            <img src={logo} alt="Mustafa Barber's Shop" className="h-16 md:h-20 lg:h-24 w-auto" />
           </button>
 
           {/* Desktop Navigation */}

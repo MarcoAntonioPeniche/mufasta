@@ -23,18 +23,11 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
       document.body.style.overscrollBehavior = '';
     };
   }, [open]);
-  const locations = [
-    {
-      name: "Unidade 1",
-      address: "Rua Brás Cubas, 16 — Centro de Santos",
-      whatsapp: "https://wa.me/5513996751314",
-    },
-    {
-      name: "Unidade 2",
-      address: "Av. Bernardino de Campos, 368 A2 — Santos",
-      whatsapp: "https://wa.me/5513996911034",
-    },
-  ];
+  const location = {
+    name: "Mustafa Barber's Shop",
+    address: "Rua Antônio Rocha Camargo, 139 — Vila Domingues, Votorantim/SP",
+    whatsapp: "https://wa.me/5515992844348",
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -56,44 +49,39 @@ const BookingModal = ({ open, onOpenChange }: BookingModalProps) => {
         }}
       >
         <DialogTitle className="text-lg font-bold text-primary text-center mb-2">
-          Escolha a unidade
+          Agendar Horário
         </DialogTitle>
         
         <div className="space-y-2.5">
-          {locations.map((location, index) => (
-            <div
-              key={index}
-              className="p-3 rounded-xl border border-white/10 bg-black/35 hover:bg-white/10 transition-all"
-            >
-              <div className="flex items-start gap-2 mb-2.5">
-                <MapPin className="text-primary shrink-0 mt-0.5" size={16} />
-                <div className="min-w-0 flex-1">
-                  <h3 className="font-bold text-foreground text-sm">{location.name}</h3>
-                  <p className="text-xs text-muted-foreground leading-tight" style={{ overflowWrap: "anywhere", whiteSpace: "normal" }}>
-                    {location.address}
-                  </p>
-                </div>
+          <div className="p-3 rounded-xl border border-white/10 bg-black/35">
+            <div className="flex items-start gap-2 mb-2.5">
+              <MapPin className="text-primary shrink-0 mt-0.5" size={16} />
+              <div className="min-w-0 flex-1">
+                <h3 className="font-bold text-foreground text-sm">{location.name}</h3>
+                <p className="text-xs text-muted-foreground leading-tight" style={{ overflowWrap: "anywhere", whiteSpace: "normal" }}>
+                  {location.address}
+                </p>
               </div>
-              
-              <Button
-                variant="cta"
-                size="sm"
-                className="w-full min-h-[42px] text-sm font-bold whitespace-nowrap overflow-hidden text-ellipsis"
-                asChild
-              >
-                <a
-                  href={location.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2"
-                  onClick={() => onOpenChange(false)}
-                >
-                  <Phone size={16} />
-                  Agendar no WhatsApp
-                </a>
-              </Button>
             </div>
-          ))}
+            
+            <Button
+              variant="cta"
+              size="sm"
+              className="w-full min-h-[42px] text-sm font-bold whitespace-nowrap overflow-hidden text-ellipsis"
+              asChild
+            >
+              <a
+                href={location.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+                onClick={() => onOpenChange(false)}
+              >
+                <Phone size={16} />
+                Agendar no WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

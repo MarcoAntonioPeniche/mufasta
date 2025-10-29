@@ -20,7 +20,7 @@ const FinalCTA = () => {
               asChild
             >
               <a
-                href="tel:+5513996751314"
+                href="tel:+5515992844348"
                 className="flex items-center gap-2"
               >
                 <Phone size={24} />
