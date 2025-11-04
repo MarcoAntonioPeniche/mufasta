@@ -8,7 +8,7 @@ const Location = () => {
     address: "Rua Antônio Rocha Camargo, 139 — Vila Domingues, Votorantim/SP",
     mapsUrl: "https://www.google.com/maps?q=Rua+Ant%C3%B4nio+Rocha+Camargo,+139,+Vila+Domingues,+Votorantim,+SP",
     embedUrl: "https://www.google.com/maps?q=Rua+Ant%C3%B4nio+Rocha+Camargo,+139,+Vila+Domingues,+Votorantim,+SP&output=embed",
-    whatsapp: "https://wa.me/5515992844348"
+    whatsapp: "https://wa.me/5515992844348?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!"
   };
 
   return (
